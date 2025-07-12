@@ -20,30 +20,25 @@ import Image from "next/image"
 // This is sample data.
 const data = [
     {
-        title: "Admin DashBoard",
+        title: "DashBoard",
         url: "/admin-dashboard",
         icon: RiDashboard3Line,
         isActive: true,
     },
     {
-        title: "User Management",
-        url: "/admin-dashboard/user-management",
+        title: "Candidates",
+        url: "/admin-dashboard/candidates",
         icon: FaUsers,
     },
     {
-        title: "Chat",
-        url: "/admin-dashboard/chat",
+        title: "Employers",
+        url: "/admin-dashboard/employers",
         icon: IoChatboxOutline,
     },
     {
-        title: "Detection list",
-        url: "/admin-dashboard/detection-list",
+        title: "Payments & Plans",
+        url: "/admin-dashboard/payments-plans",
         icon: IoListOutline,
-    },
-    {
-        title: "Notifications & Communication",
-        url: "/admin-dashboard/notifications",
-        icon: CiBellOn,
     },
     {
         title: "Administrators",
@@ -64,9 +59,10 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
                 <Image
                     src={mainLogo}
                     alt="Dashboard Logo"
-                    style={{ width: "250px", height: "auto" }}
-                    // width={200}
-                    // height={200}
+                    style={{
+                        width: '35%',
+                        height: 'auto',
+                    }}
                     priority
                 />
             </SidebarHeader>

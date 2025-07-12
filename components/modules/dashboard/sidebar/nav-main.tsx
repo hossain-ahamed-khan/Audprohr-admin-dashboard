@@ -45,7 +45,7 @@ export function NavMain({
                             <CollapsibleTrigger asChild>
                                 <SidebarMenuButton
                                     tooltip={item.title}
-                                    className={`py-6 ${item.isActive ? "bg-[#0030A8] text-white" : ""}`}
+                                    className={`py-6 ${item.isActive ? "bg-[#4B2A99] text-white rounded-3xl" : ""}`}
                                     asChild
                                 >
                                     <Link href={item.url}>
