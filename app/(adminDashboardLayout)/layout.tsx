@@ -19,7 +19,7 @@ export default function AdminDashboardLayout({ children }: { children: React.Rea
         <SidebarProvider>
             <AppSidebar />
             <SidebarInset>
-                <header className="flex justify-between h-20 shrink-0 items-center gap-2 transition-[width,height] ease-linear group-has-data-[collapsible=icon]/sidebar-wrapper:h-12">
+                <header className="bg-[#F8F8FF] flex justify-between h-20 shrink-0 items-center gap-2 transition-[width,height] ease-linear group-has-data-[collapsible=icon]/sidebar-wrapper:h-12">
                     <div className="flex items-center gap-2 px-4">
                         <SidebarTrigger className="-ml-1" />
                     </div>
@@ -48,7 +48,7 @@ export default function AdminDashboardLayout({ children }: { children: React.Rea
                     </Popover>
 
                 </header>
-                <div className="flex flex-1 flex-col gap-4 p-4 pt-0 bg-[#E6EBF7] rounded-tl-3xl overflow-y-auto">
+                <div className="bg-[#E7E4F5] flex flex-1 flex-col gap-4 overflow-y-auto py-4 px-8 rounded-tl-3xl">
                     {children}
                 </div>
             </SidebarInset>

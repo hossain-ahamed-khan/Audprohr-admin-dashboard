@@ -1,10 +1,9 @@
 "use client"
 import mainLogo from "@/public/images/main-logo.png"
 import { FaUsers } from "react-icons/fa6";
-import { IoChatboxOutline } from "react-icons/io5";
 import { RiDashboard3Line } from "react-icons/ri";
-import { IoListOutline } from "react-icons/io5";
-import { CiBellOn } from "react-icons/ci";
+import { GrUserManager } from "react-icons/gr";
+import { MdPayment } from "react-icons/md";
 import { RiShieldUserLine } from "react-icons/ri";
 import * as React from "react"
 import { usePathname } from "next/navigation"
@@ -33,12 +32,12 @@ const data = [
     {
         title: "Employers",
         url: "/admin-dashboard/employers",
-        icon: IoChatboxOutline,
+        icon: GrUserManager,
     },
     {
         title: "Payments & Plans",
         url: "/admin-dashboard/payments-plans",
-        icon: IoListOutline,
+        icon: MdPayment,
     },
     {
         title: "Administrators",
@@ -54,8 +53,8 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
         isActive: pathname === item.url,
     }))
     return (
-        <Sidebar collapsible="icon" {...props} className="border-none bg-[#FFFFFF] pt-8">
-            <SidebarHeader className="flex items-center justify-center h-16 shrink-10 bg-[#FFFFFF]">
+        <Sidebar collapsible="icon" {...props} className="border-none bg-[#F8F8FF] pt-8">
+            <SidebarHeader className="flex items-center justify-center h-16 shrink-10 bg-[#F8F8FF]">
                 <Image
                     src={mainLogo}
                     alt="Dashboard Logo"
@@ -66,7 +65,7 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
                     priority
                 />
             </SidebarHeader>
-            <SidebarContent className="bg-[#FFFFFF] pt-4">
+            <SidebarContent className="bg-[#F8F8FF] pt-4">
                 <NavMain items={navItems} />
             </SidebarContent>
         </Sidebar>
