@@ -44,7 +44,7 @@ export default function ProfileCard() {
                         <div className="w-full flex justify-between">
                             <div></div>
                             <AlertDialogTitle className="text-2xl font-bold mt-10 mb-5">Account Setting</AlertDialogTitle>
-                            <AlertDialogCancel><ImCross /></AlertDialogCancel>
+                            <AlertDialogCancel><ImCross className="text-slate-800" /></AlertDialogCancel>
                         </div>
 
                         <EditProfile />
@@ -65,7 +65,7 @@ export default function ProfileCard() {
                         <div className="w-full flex justify-between">
                             <div></div>
                             <AlertDialogTitle className="text-2xl font-bold mt-10 mb-5">Password Change</AlertDialogTitle>
-                            <AlertDialogCancel><ImCross /></AlertDialogCancel>
+                            <AlertDialogCancel><ImCross className="text-slate-800" /></AlertDialogCancel>
                         </div>
 
                         <PasswordChange />
