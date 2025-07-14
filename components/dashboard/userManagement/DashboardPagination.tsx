@@ -14,7 +14,7 @@ export default function DashboardPagination() {
         <Pagination>
             <PaginationContent>
                 <PaginationItem>
-                    <PaginationPrevious href="#" />
+                    <PaginationPrevious className="rounded-3xl" href="#" />
                 </PaginationItem>
                 <PaginationItem>
                     <Link href="#">1</Link>
@@ -23,7 +23,7 @@ export default function DashboardPagination() {
                     <PaginationEllipsis />
                 </PaginationItem>
                 <PaginationItem>
-                    <PaginationNext href="#" />
+                    <PaginationNext className="rounded-3xl" href="#" />
                 </PaginationItem>
             </PaginationContent>
         </Pagination>

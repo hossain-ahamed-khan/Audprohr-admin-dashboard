@@ -25,8 +25,8 @@ const data = [
         isActive: true,
     },
     {
-        title: "Candidates",
-        url: "/admin-dashboard/candidates",
+        title: "Job Seeker",
+        url: "/admin-dashboard/jobSeeker",
         icon: FaUsers,
     },
     {
