@@ -14,8 +14,6 @@ import {
 } from "@/components/ui/alert-dialog"
 import { ImCross } from "react-icons/im";
 import { RiDeleteBin6Line } from "react-icons/ri";
-import Image from "next/image";
-import profileImage from "@/public/images/admin-image.png";
 import { MdOutlineEdit } from "react-icons/md";
 import EditAdministrator from "./EditAdministrator";
 import DeleteAdministrator from "./DeleteAdministrator";
@@ -24,24 +22,14 @@ export default function AdministratorTableRow() {
     return (
         <TableRow>
             <TableCell className="font-medium">#1233</TableCell>
-            <TableCell>
-                <div className="flex-none lg:flex lg:items-center lg:gap-2">
-                    <Image
-                        src={profileImage}
-                        width={30}
-                        height={30}
-                        alt="Picture of the author"
-                    />
-                    <p>Kathryn Murp</p>
-                </div>
-            </TableCell>
+            <TableCell>Kathryn Murp</TableCell>
             <TableCell>bockely@att.com</TableCell>
             <TableCell>(201) 555-0124</TableCell>
             <TableCell>Admin</TableCell>
             <TableCell className="text-right space-x-2">
 
                 <AlertDialog>
-                    <AlertDialogTrigger className="bg-[#0030A8] p-3 rounded-lg text-white text-xl">
+                    <AlertDialogTrigger className="bg-[#0030A8] p-3 rounded-lg text-white text-xl cursor-pointer">
                         <MdOutlineEdit />
                     </AlertDialogTrigger>
                     <AlertDialogContent>
@@ -49,7 +37,7 @@ export default function AdministratorTableRow() {
                             <div className="w-full flex justify-between">
                                 <div></div>
                                 <AlertDialogTitle className="text-2xl font-bold mt-10 mb-5">Edit Administrator</AlertDialogTitle>
-                                <AlertDialogCancel><ImCross /></AlertDialogCancel>
+                                <AlertDialogCancel><ImCross className="text-[#333333]" /></AlertDialogCancel>
                             </div>
 
                             <EditAdministrator />
@@ -60,7 +48,7 @@ export default function AdministratorTableRow() {
                 </AlertDialog>
 
                 <AlertDialog>
-                    <AlertDialogTrigger className="bg-[#E30000] p-3 rounded-lg text-white text-xl">
+                    <AlertDialogTrigger className="bg-[#E30000] p-3 rounded-lg text-white text-xl cursor-pointer">
                         <RiDeleteBin6Line />
                     </AlertDialogTrigger>
                     <AlertDialogContent>
@@ -68,7 +56,7 @@ export default function AdministratorTableRow() {
                             <div className="w-full flex justify-between">
                                 <div></div>
                                 <AlertDialogTitle className="text-center text-2xl font-bold pt-10 pb-5">Confirm Account Deletion</AlertDialogTitle>
-                                <AlertDialogCancel className="text-right"><ImCross /></AlertDialogCancel>
+                                <AlertDialogCancel className="text-right"><ImCross className="text-[#333333]" /></AlertDialogCancel>
                             </div>
 
                             <DeleteAdministrator />

@@ -16,7 +16,7 @@ import {
     AlertDialogTrigger,
 } from "@/components/ui/alert-dialog"
 
-import DashboardPagination from "@/components/dashboard/userManagement/DashboardPagination"
+import DashboardPagination from "@/components/dashboard/shared/DashboardPagination"
 import { FiPlus } from "react-icons/fi"
 import { ImCross } from "react-icons/im"
 import JobSeekerTableRow from "@/components/dashboard/jobSeeker/JobSeekerTableRow"
