@@ -12,7 +12,7 @@ import {
     AlertDialogTitle,
     AlertDialogTrigger,
 } from "@/components/ui/alert-dialog"
-import { BsThreeDotsVertical } from "react-icons/bs";
+import { TbCancel } from "react-icons/tb";
 import { ImCross } from "react-icons/im";
 import { Switch } from "@/components/ui/switch"
 import { RiDeleteBin6Line } from "react-icons/ri";
@@ -31,7 +31,7 @@ export default function EmployersTableRow() {
             <TableCell>simply dummy text</TableCell>
             <TableCell className="text-right">
                 <AlertDialog>
-                    <AlertDialogTrigger><BsThreeDotsVertical /></AlertDialogTrigger>
+                    <AlertDialogTrigger><TbCancel className="text-white bg-[#FF2E63] size-8 rounded-lg" /></AlertDialogTrigger>
                     <AlertDialogContent>
                         <AlertDialogHeader>
                             <div className="w-full flex justify-between">
