@@ -1,3 +1,4 @@
+"use client"
 import {
     TableCell,
     TableRow,
@@ -16,7 +17,25 @@ import { ImCross } from "react-icons/im";
 import { RiDeleteBin6Line } from "react-icons/ri";
 import { MdOutlineEdit } from "react-icons/md";
 import EditAdministrator from "./EditAdministrator";
-import DeleteAdministrator from "./DeleteAdministrator";
+import { Button } from "@/components/ui/button";
+import Swal from "sweetalert2";
+
+function deleteAccount() {
+    Swal.fire({
+        title: "Are you sure?",
+        text: "You won't be able to revert this!",
+        icon: "warning",
+        showCancelButton: true,
+        confirmButtonColor: "#FF2E63",
+        cancelButtonColor: "#d1d5db",
+        confirmButtonText: "Yes, delete it!"
+    }).then((result) => {
+        if (result.isConfirmed) {
+            // TODO: Add your delete logic here
+            Swal.fire("Deleted!", "The account has been deleted.", "success");
+        }
+    });
+}
 
 export default function AdministratorTableRow() {
     return (
@@ -26,10 +45,10 @@ export default function AdministratorTableRow() {
             <TableCell>bockely@att.com</TableCell>
             <TableCell>(201) 555-0124</TableCell>
             <TableCell>Admin</TableCell>
-            <TableCell className="text-right space-x-2">
+            <TableCell className="text-right space-x-2 flex items-center justify-end">
 
                 <AlertDialog>
-                    <AlertDialogTrigger className="bg-[#0030A8] p-3 rounded-lg text-white text-xl cursor-pointer">
+                    <AlertDialogTrigger className="bg-[#4B2A99] p-2 rounded-lg text-white text-xl cursor-pointer">
                         <MdOutlineEdit />
                     </AlertDialogTrigger>
                     <AlertDialogContent>
@@ -47,8 +66,8 @@ export default function AdministratorTableRow() {
                     </AlertDialogContent>
                 </AlertDialog>
 
-                <AlertDialog>
-                    <AlertDialogTrigger className="bg-[#E30000] p-3 rounded-lg text-white text-xl cursor-pointer">
+                {/* <AlertDialog>
+                    <AlertDialogTrigger className="bg-[#FF2E63] p-3 rounded-lg text-white text-xl cursor-pointer">
                         <RiDeleteBin6Line />
                     </AlertDialogTrigger>
                     <AlertDialogContent>
@@ -64,7 +83,10 @@ export default function AdministratorTableRow() {
                             <AlertDialogDescription></AlertDialogDescription>
                         </AlertDialogHeader>
                     </AlertDialogContent>
-                </AlertDialog>
+                </AlertDialog> */}
+
+
+                <Button onClick={deleteAccount} className="bg-[#FF2E63] p-2 rounded-lg text-white text-xl cursor-pointer"><RiDeleteBin6Line /></Button>
 
             </TableCell>
         </TableRow>
