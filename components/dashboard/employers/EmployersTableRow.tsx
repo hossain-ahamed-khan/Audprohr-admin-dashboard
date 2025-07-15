@@ -18,17 +18,17 @@ import { Switch } from "@/components/ui/switch"
 import { RiDeleteBin6Line } from "react-icons/ri";
 import { Button } from "@/components/ui/button";
 
-export default function JobSeekerTableRow() {
+export default function EmployersTableRow() {
     return (
         <TableRow>
             <TableCell className="font-medium">#1233</TableCell>
             <TableCell>Kathryn Murp</TableCell>
             <TableCell>bockely@att.com</TableCell>
-            <TableCell>(201) 555-0124</TableCell>
+            <TableCell>core.com</TableCell>
             <TableCell>Dhaka, Bangladesh</TableCell>
-            <TableCell>Civil Engineer</TableCell>
-            <TableCell>kathrynwpcv.pdf</TableCell>
-            <TableCell>Pre-Vetted</TableCell>
+            <TableCell>Built for the future.</TableCell>
+            <TableCell>All Job Posts</TableCell>
+            <TableCell>simply dummy text</TableCell>
             <TableCell className="text-right">
                 <AlertDialog>
                     <AlertDialogTrigger><BsThreeDotsVertical /></AlertDialogTrigger>

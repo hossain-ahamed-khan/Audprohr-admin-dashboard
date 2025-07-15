@@ -17,10 +17,10 @@ import {
 } from "@/components/ui/alert-dialog"
 
 import DashboardPagination from "@/components/dashboard/userManagement/DashboardPagination"
-import NotificationTableRow from "@/components/dashboard/jobSeeker/JobSeekerTableRow"
 import { FiPlus } from "react-icons/fi"
 import { ImCross } from "react-icons/im"
-import AddNotification from "@/components/dashboard/jobSeeker/AddJobSeeker"
+import JobSeekerTableRow from "@/components/dashboard/jobSeeker/JobSeekerTableRow"
+import AddJobSeeker from "@/components/dashboard/jobSeeker/AddJobSeeker"
 
 export default function JobSeekerPage() {
     return (
@@ -30,12 +30,15 @@ export default function JobSeekerPage() {
                 <AlertDialogTrigger className="flex gap-2 items-center px-8 py-2 rounded-3xl bg-[#4B2A99] text-white cursor-pointer"><FiPlus />New Job Seeker Profile Create </AlertDialogTrigger>
                 <AlertDialogContent>
                     <AlertDialogHeader>
+
                         <div className="w-full flex justify-between">
                             <div></div>
                             <AlertDialogTitle className="text-center text-2xl font-bold mt-10 mb-5">New Job Seeker Profile Create</AlertDialogTitle>
                             <AlertDialogCancel className="text-right"><ImCross className="text-[#221800]" /></AlertDialogCancel>
                         </div>
-                        <AddNotification />
+
+                        <AddJobSeeker />
+
                         <AlertDialogDescription>
                         </AlertDialogDescription>
                     </AlertDialogHeader>
@@ -59,16 +62,13 @@ export default function JobSeekerPage() {
                     </TableRow>
                 </TableHeader>
                 <TableBody>
-                    <NotificationTableRow />
-                    <NotificationTableRow />
-                    <NotificationTableRow />
-                    <NotificationTableRow />
-                    <NotificationTableRow />
-                    <NotificationTableRow />
-                    <NotificationTableRow />
-                    <NotificationTableRow />
-                    <NotificationTableRow />
-                    <NotificationTableRow />
+                    <JobSeekerTableRow />
+                    <JobSeekerTableRow />
+                    <JobSeekerTableRow />
+                    <JobSeekerTableRow />
+                    <JobSeekerTableRow />
+                    <JobSeekerTableRow />
+                    <JobSeekerTableRow />
                 </TableBody>
             </Table>
 
