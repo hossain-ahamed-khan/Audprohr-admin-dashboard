@@ -18,6 +18,8 @@ import { Switch } from "@/components/ui/switch"
 import { RiDeleteBin6Line } from "react-icons/ri";
 import { Button } from "@/components/ui/button";
 import { MdRadioButtonChecked } from "react-icons/md";
+import Resume from "./Resume";
+import AllResume from "./AllResume";
 
 export default function JobSeekerTableRow() {
     return (
@@ -28,8 +30,32 @@ export default function JobSeekerTableRow() {
             <TableCell>(201) 555-0124</TableCell>
             <TableCell>Dhaka, Bangladesh</TableCell>
             <TableCell>Civil Engineer</TableCell>
-            <TableCell className="text-[#4B2A99] flex gap-2 items-center">kathrynwpcv.pdf
-                <MdRadioButtonChecked className="size-5" />
+            <TableCell className="text-[#4B2A99] flex gap-2 items-center">
+
+                <AlertDialog>
+                    <AlertDialogTrigger>kathrynwpcv.pdf</AlertDialogTrigger>
+                    <AlertDialogContent>
+                        <AlertDialogHeader>
+
+                            <Resume />
+
+                            <AlertDialogDescription></AlertDialogDescription>
+                        </AlertDialogHeader>
+                    </AlertDialogContent>
+                </AlertDialog>
+
+                <AlertDialog>
+                    <AlertDialogTrigger><MdRadioButtonChecked className="size-5" /></AlertDialogTrigger>
+                    <AlertDialogContent>
+                        <AlertDialogHeader>
+
+                            <AllResume />
+
+                            <AlertDialogDescription></AlertDialogDescription>
+                        </AlertDialogHeader>
+                    </AlertDialogContent>
+                </AlertDialog>
+
             </TableCell>
             <TableCell>Pre-Vetted</TableCell>
             <TableCell className="text-right">

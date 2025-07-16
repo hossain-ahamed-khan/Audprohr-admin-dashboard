@@ -48,7 +48,7 @@ export default function AdminDashboardLayout({ children }: { children: React.Rea
                     </Popover>
 
                 </header>
-                <div className="bg-[#E7E4F5] flex flex-1 flex-col gap-4 overflow-y-auto py-4 px-8 rounded-tl-3xl">
+                <div className="bg-[#E7E4F5] flex flex-1 flex-col gap-4 overflow-y-auto py-4 px-8">
                     {children}
                 </div>
             </SidebarInset>
