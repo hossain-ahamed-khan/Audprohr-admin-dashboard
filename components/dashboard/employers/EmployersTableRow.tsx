@@ -17,6 +17,7 @@ import { ImCross } from "react-icons/im";
 import { Switch } from "@/components/ui/switch"
 import { RiDeleteBin6Line } from "react-icons/ri";
 import { Button } from "@/components/ui/button";
+import { MdRemoveRedEye } from "react-icons/md";
 
 export default function EmployersTableRow() {
     return (
@@ -27,11 +28,13 @@ export default function EmployersTableRow() {
             <TableCell>core.com</TableCell>
             <TableCell>Dhaka, Bangladesh</TableCell>
             <TableCell>Built for the future.</TableCell>
-            <TableCell>All Job Posts</TableCell>
+            <TableCell className="flex items-center gap-2">All Job Posts
+                <MdRemoveRedEye className="size-5 text-[#4B2A99]" />
+            </TableCell>
             <TableCell>simply dummy text</TableCell>
             <TableCell className="text-right">
                 <AlertDialog>
-                    <AlertDialogTrigger><TbCancel className="text-white bg-[#FF2E63] size-8 rounded-lg" /></AlertDialogTrigger>
+                    <AlertDialogTrigger className="text-white bg-[#FF2E63] p-2 rounded-lg cursor-pointer"><TbCancel className="text-white bg-[#FF2E63] size-6" /></AlertDialogTrigger>
                     <AlertDialogContent>
                         <AlertDialogHeader>
                             <div className="w-full flex justify-between">

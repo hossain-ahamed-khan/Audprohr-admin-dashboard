@@ -11,7 +11,7 @@ import Link from "next/link"
 
 export default function DashboardPagination() {
     return (
-        <Pagination>
+        <Pagination className="mt-10">
             <PaginationContent>
                 <PaginationItem>
                     <PaginationPrevious className="rounded-3xl" href="#" />

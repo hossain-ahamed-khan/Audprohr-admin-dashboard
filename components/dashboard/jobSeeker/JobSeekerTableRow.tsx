@@ -17,6 +17,7 @@ import { ImCross } from "react-icons/im";
 import { Switch } from "@/components/ui/switch"
 import { RiDeleteBin6Line } from "react-icons/ri";
 import { Button } from "@/components/ui/button";
+import { MdRadioButtonChecked } from "react-icons/md";
 
 export default function JobSeekerTableRow() {
     return (
@@ -27,7 +28,9 @@ export default function JobSeekerTableRow() {
             <TableCell>(201) 555-0124</TableCell>
             <TableCell>Dhaka, Bangladesh</TableCell>
             <TableCell>Civil Engineer</TableCell>
-            <TableCell>kathrynwpcv.pdf</TableCell>
+            <TableCell className="text-[#4B2A99] flex gap-2 items-center">kathrynwpcv.pdf
+                <MdRadioButtonChecked className="size-5" />
+            </TableCell>
             <TableCell>Pre-Vetted</TableCell>
             <TableCell className="text-right">
                 <AlertDialog>
