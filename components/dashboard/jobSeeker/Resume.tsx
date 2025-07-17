@@ -1,6 +1,6 @@
 import { AlertDialogCancel, AlertDialogTitle } from '@/components/ui/alert-dialog'
-import Image from "next/image";
-import resumeImg from "@/public/images/resume-image.png"
+import candidateImg from "@/public/images/resume-image.png"
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import React from 'react'
 import { ImCross } from 'react-icons/im'
 
@@ -17,13 +17,10 @@ export default function Resume() {
             <div>
                 <div className="text-center">
                     <div className="flex justify-center">
-                        <Image
-                            src={resumeImg}
-                            width={60}
-                            height={60}
-                            alt="resume image"
-
-                        />
+                        <Avatar className="w-[60px] h-[60px] mr-3">
+                            <AvatarImage src={candidateImg.src} alt="vetted candidate" />
+                            <AvatarFallback>RA</AvatarFallback>
+                        </Avatar>
                     </div>
                     <h2 className="text-2xl text-[#1A1A40] font-semibold">Rahamatullah Alam</h2>
                     <p className="text-sm my-1">UI/UX Designer</p>
