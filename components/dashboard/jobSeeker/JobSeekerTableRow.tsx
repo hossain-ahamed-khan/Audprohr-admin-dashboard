@@ -33,7 +33,7 @@ export default function JobSeekerTableRow() {
             <TableCell className="text-[#4B2A99] flex gap-2 items-center">
 
                 <AlertDialog>
-                    <AlertDialogTrigger>kathrynwpcv.pdf</AlertDialogTrigger>
+                    <AlertDialogTrigger className="cursor-pointer">kathrynwpcv.pdf</AlertDialogTrigger>
                     <AlertDialogContent>
                         <AlertDialogHeader>
 
@@ -45,7 +45,7 @@ export default function JobSeekerTableRow() {
                 </AlertDialog>
 
                 <AlertDialog>
-                    <AlertDialogTrigger><MdRadioButtonChecked className="size-5" /></AlertDialogTrigger>
+                    <AlertDialogTrigger className="cursor-pointer"><MdRadioButtonChecked className="size-5" /></AlertDialogTrigger>
                     <AlertDialogContent>
                         <AlertDialogHeader>
 

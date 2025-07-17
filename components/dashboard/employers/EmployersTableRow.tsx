@@ -18,6 +18,7 @@ import { Switch } from "@/components/ui/switch"
 import { RiDeleteBin6Line } from "react-icons/ri";
 import { Button } from "@/components/ui/button";
 import { MdRemoveRedEye } from "react-icons/md";
+import AllJobPosts from "./AllJobPosts";
 
 export default function EmployersTableRow() {
     return (
@@ -28,8 +29,19 @@ export default function EmployersTableRow() {
             <TableCell>core.com</TableCell>
             <TableCell>Dhaka, Bangladesh</TableCell>
             <TableCell>Built for the future.</TableCell>
-            <TableCell className="flex items-center gap-2">All Job Posts
-                <MdRemoveRedEye className="size-5 text-[#4B2A99]" />
+            <TableCell>
+                <AlertDialog>
+                    <AlertDialogTrigger className="flex items-center gap-2 underline cursor-pointer">All Job Posts <MdRemoveRedEye className="size-5 text-[#4B2A99]" /></AlertDialogTrigger>
+                    <AlertDialogContent>
+                        <AlertDialogHeader>
+
+                            <AllJobPosts />
+
+                            <AlertDialogDescription></AlertDialogDescription>
+                        </AlertDialogHeader>
+                    </AlertDialogContent>
+                </AlertDialog>
+
             </TableCell>
             <TableCell>simply dummy text</TableCell>
             <TableCell className="text-right">
